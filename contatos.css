@@ -1,0 +1,138 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+/*Estilização do cabeçalho*/
+
+header {
+    background: #aaaaaa;
+    padding: 20px 0; /*Espaçamento interno para ajudar na centralização*/
+}
+.caixa {
+    position: relative; /*Estamos passndo um limite de tamanho para o nosso cabeçalho*/
+    width: 940px; /*Limite determinado*/
+    margin: 0 auto; /*Centralizamos os elementos e alinhamos no meio do cabeçalho*/ 
+}
+nav {
+    position: absolute; 
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display: inline; /*Deixamos as opções da lista um do lado do outro, parecendo um menu.*/
+    margin-left: 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold; /*Deixamos o texto em negrito*/
+    font-size: 22px; 
+    text-decoration: none; /*usamos essa propriedad para tirar decorações do texto*/
+}
+nav a:hover {
+    color: rgb(00, 00, 150);
+    text-decoration: underline;
+}
+nav a:active {
+    color: #088c19;
+}
+
+/*Estilização do conteúdo*/
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 10px 0 10px;
+}
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox {
+    margin: 20px 0;
+}
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: rgb(55, 55, 190);
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover {
+    background: rgb(19, 95, 182);
+    transform: scale(1.2);
+}
+.table {
+    margin: 20px 40px;
+}
+thead {
+    background: rgb(55, 55, 190);
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+@media screen and (max-width: 480px){
+    .caixa {
+        width: auto;
+    }
+    .caixa li {
+        margin: 0 5px;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    form label {
+        margin: 0 1.0%;
+        font-size: 5vw;
+    }
+    form, .input-padrao {
+        margin: 1.0% 1.0%;
+        width: 53%;
+    }
+    form fieldset {
+        margin: 1.0% 1.0%;
+    }
+    form fieldset legend {
+        font-size: 5vw;
+    }
+    .enviar {
+        margin: 0 1.0%;
+        width: 60%;
+    }
+    .table {
+        margin: 20px 7.0%;
+    }
+}
+/*Estilização do rodapé*/
+
+footer {
+    text-align: center;
+    background: url(/img/bg.jpg);
+    padding: 40px 0;
+}
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+}

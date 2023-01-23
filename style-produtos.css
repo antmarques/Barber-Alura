@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+/*Estilização do cabeçalho*/
+
+header {
+    background: #aaaaaa;
+    padding: 20px 0; /*Espaçamento interno para ajudar na centralização*/
+}
+.caixa {
+    position: relative; /*Estamos passndo um limite de tamanho para o nosso cabeçalho*/
+    width: 940px; /*Limite determinado*/
+    margin: 0 auto; /*Centralizamos os elementos e alinhamos no meio do cabeçalho*/ 
+}
+nav {
+    position: absolute; 
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display: inline; /*Deixamos as opções da lista um do lado do outro, parecendo um menu.*/
+    margin-left: 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold; /*Deixamos o texto em negrito*/
+    font-size: 22px; 
+    text-decoration: none; /*usamos essa propriedad para tirar decorações do texto*/
+}
+nav a:hover {
+    color: rgb(00, 00, 150);
+}
+nav a:active {
+    color: #088c19;
+}
+
+/*Estilização do conteúdo*/
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: black 3px solid;
+    border-radius: 10px; 
+}
+
+.produtos li:hover {
+    border-color: rgb(00, 00, 150);
+}
+.produtos li:active {
+    border-color: #088c19;
+}
+.produtos li:hover h2 {
+    font-size: 35px;
+    color: rgb(00, 00, 150);
+}
+.produtos li:hover .preco {
+    font-size: 28px;
+}
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.descricao {
+    font-size: 18px;
+}
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 480px){
+    .caixa, .principal, .produtos{
+        width: auto;
+    }
+    .caixa li {
+        margin: 0 5px;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .produtos li{
+        width: 95%;
+        margin-top: 5px;
+    }
+}
+/*Estilização do rodapé*/
+
+footer {
+    text-align: center;
+    background: url(/img/bg.jpg);
+    padding: 40px 0;
+}
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+}
